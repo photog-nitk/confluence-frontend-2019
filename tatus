@@ -1,0 +1,89 @@
+[33mcommit c38820f1e77a830144bd2211dc64f1dca11aeb5e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Arpit Bhalla <arpitbhalla2001@gmail.com>
+Date:   Sun Sep 15 17:40:38 2019 +0530
+
+    Add
+
+[33mcommit f9e03b21bc9c910086ba447a0847111fdf366e5a[m
+Merge: 19dd750 efef362
+Author: Arpit Bhalla <55053424+arpitBhalla@users.noreply.github.com>
+Date:   Sun Sep 15 15:05:01 2019 +0530
+
+    Merge pull request #2 from photog-nitkkr/master
+    
+    GOT
+
+[33mcommit efef3623660916a5e7d3d842bee7f76e7b42e474[m
+Merge: 20a6f8d d68b0da
+Author: Ankur Charan <ankurcharan98@gmail.com>
+Date:   Sun Sep 15 00:08:35 2019 +0530
+
+    Merge pull request #5 from becauseIknowNothing/master
+    
+    Added Reducers and Actions and Modified Routes
+
+[33mcommit d68b0dadf03dd82516c9019096d05e74ea434c9d[m
+Author: unknown <lovish.madhu.2404@gmail.com>
+Date:   Sat Sep 14 18:23:36 2019 +0530
+
+    'Improvements'
+
+[33mcommit cae73de22aa01d4d0b930e498fc741d53c5013ac[m
+Author: unknown <lovish.madhu.2404@gmail.com>
+Date:   Sat Sep 14 13:05:14 2019 +0530
+
+    Added Reducers and Actions and Modified Routes
+
+[33mcommit 20a6f8d1b06f364313f3927014f4affc52e6547a[m
+Merge: f78d387 2db966e
+Author: Ankur Charan <ankurcharan98@gmail.com>
+Date:   Sat Sep 14 02:50:59 2019 +0530
+
+    Merge pull request #4 from dikshantj/master
+    
+    Added routes
+
+[33mcommit 2db966e80cf209b50a9cb65a100a49c63158a8fb[m
+Author: dikshantj <dikshantjagota@outlook.com>
+Date:   Thu Sep 12 09:35:26 2019 +0530
+
+    Added routes
+
+[33mcommit 19dd75024ecb69b971eedc7085e407470d645f7d[m
+Merge: b07e60a f78d387
+Author: Arpit Bhalla <55053424+arpitBhalla@users.noreply.github.com>
+Date:   Tue Sep 10 11:46:44 2019 +0530
+
+    Merge pull request #1 from photog-nitkkr/master
+    
+    Try
+
+[33mcommit f78d387e47a93acddeaf166136f1a7b65d323ea7[m
+Author: Ankur Charan <ankurcharan98@gmail.com>
+Date:   Tue Sep 10 00:07:00 2019 +0530
+
+    structure
+    
+    Signed-off-by: Ankur Charan <ankurcharan98@gmail.com>
+
+[33mcommit b31e58a12c0b0f00537871cee5a56869387dd2b2[m
+Author: Ankur Charan <ankurcharan98@gmail.com>
+Date:   Mon Sep 9 17:10:45 2019 +0530
+
+    adding component
+    
+    Signed-off-by: Ankur Charan <ankurcharan98@gmail.com>
+
+[33mcommit b07e60ac6706525f7c4ca4ef2eb51d5e87c5c022[m
+Author: Mudit Jain <ciphereck@gmail.com>
+Date:   Wed Sep 4 21:17:50 2019 +0530
+
+    firebase initialization
+    
+    Signed-off-by: Mudit Jain <ciphereck@gmail.com>
+
+[33mcommit 1c10ddc6f75d06a1ad90bbde4bbbba6561101a35[m
+Author: Mudit Jain <ciphereck@gmail.com>
+Date:   Wed Sep 4 21:05:56 2019 +0530
+
+    Initial commit from Create React App

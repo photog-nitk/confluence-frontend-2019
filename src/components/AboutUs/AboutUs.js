@@ -13,5 +13,5 @@ class AboutUs extends Component {
 	}
 }
 
-export default HomePage;
+export default AboutUs;
 	

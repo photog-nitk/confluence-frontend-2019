@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Guests from './components/Guests/Guests';
 import Contact from './components/Contact/Contact';
 import Sponsors from './components/Sponsors/Sponsors';
+import Developers from './components/Developers/Developers';
 import User from './components/User/User';
 import LoggedIn from './LoggedIn';
 import Error404 from './components/Error404/Error404';
@@ -28,6 +29,7 @@ const App = () => {
             <LoggedIn path='/about' component={AboutUs} />
             <LoggedIn path='/sponsors' component={Sponsors} />
             <LoggedIn path='/user' component={User} />
+            <LoggedIn path='/developers' component={Developers} />
             <LoggedIn component={Error404} />
           </Switch>
         </BrowserRouter>

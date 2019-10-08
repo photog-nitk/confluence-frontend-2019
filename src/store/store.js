@@ -15,8 +15,7 @@ const Context = createContext({
     user: (user !== null) ? user : null,
     isAuth: (ltoken && user !== null) ? true : false,
     errors: [],
-    token: localStorage.getItem('cToken'),
-    onBoard: false,
+    token: localStorage.getItem('cToken')
 
 })
 

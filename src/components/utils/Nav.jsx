@@ -34,12 +34,12 @@ const Nav = () => {
   ];
   return (
     <>
-      <div class='outer-menu'>
-        <input class='checkbox-toggle' type='checkbox' />
-        <div class='hamburger'>
+      <div className='outer-menu'>
+        <input className='checkbox-toggle' type='checkbox' />
+        <div className='hamburger'>
           <div></div>
         </div>
-        <div class='menu'>
+        <div className='menu'>
           <div>
             <ul>
               {menuList.map((m, i) => (
@@ -55,7 +55,7 @@ const Nav = () => {
                   <Link to='/dashboard'>Dashboard</Link>
                 </li>
               ) : null}
-              <li className="login">
+              <li className='login'>
                 <OauthLogin />
               </li>
             </ul>

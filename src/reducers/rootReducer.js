@@ -8,10 +8,11 @@ export default function rootReducer(state, action) {
 
     switch (type) {
         case 'LOGIN':
+        case 'ONBOARD':
             localStorage.setItem('cToken', payload)
-            console.log(payload)
+
             const user = jwt.verify(payload, config.JWTKEY)
-            console.log(user)
+
             return {
                 ...state,
                 token: payload,
@@ -26,15 +27,7 @@ export default function rootReducer(state, action) {
                         isAuth: false,
                         user: null
                 }
-                case 'ONBOARD':
-                    return {
-                        ...state,
-                        user: {
-                            ...state.user,
-                            onBoard: payload
-                        }
-                    }
-                    default:
-                        return state
+                default:
+                    return state
     }
 }

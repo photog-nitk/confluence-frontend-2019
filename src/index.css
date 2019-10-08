@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
-html{
+
+html {
     width: 100%;
     min-height: 100vh;
     background-size: 100%;
@@ -21,7 +22,8 @@ body {
     background-size: 100%;
     font-family: 'PT Sans', sans-serif;
 }
-#root{
+
+#root {
     min-height: 100vh;
     height: auto;
 }
@@ -79,10 +81,11 @@ body {
 }
 
 @media (max-width:800px) {
-    .event-t{
+    .event-t {
         font-size: 5vw !important;
     }
-    .title{
+
+    .title {
         font-size: 13vw !important;
         text-align: center !important;
     }
@@ -247,7 +250,7 @@ a {
     padding-top: 30px;
     margin-top: 0 !important;
     padding-bottom: 20px;
-    font-size: 10.5em ;
+    font-size: 10.5em;
     font-family: 'lazer84';
     letter-spacing: 9px;
 }
@@ -505,7 +508,7 @@ button {
     border-radius: 20px;
     background: white;
     color: #920563;
-    z-index:20;
+    z-index: 20;
 
 }
 
@@ -536,4 +539,18 @@ button:hover {
 
 .bold {
     font-weight: bolder;
+}
+
+@media (max-width:800px) {
+    input {
+        width: 90%;
+    }
+
+    select {
+        width: 40%;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
 }

@@ -44,7 +44,6 @@ const Event = props => {
     };
     getEvents();
   }, []);
-  console.log(data);
 
   const register = async () => {
     setNotif([...notif, { data: 'Registering' }]);
@@ -55,8 +54,7 @@ const Event = props => {
     if (!state.isAuth) {
       props.history.push('/notauthorized');
     }
-    console.log(state.token);
-    console.log(category, event);
+
     try {
       const iconfig = {
         headers: {
@@ -73,13 +71,10 @@ const Event = props => {
       if (res.data.success) {
         setNotif([...notif, { data: 'Registered Successfully' }]);
       }
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
   };
-
-  console.log(events);
 
   const catcheck = events && events.find(e => e.name === category);
   const evecheck = catcheck && catcheck.events.find(e => e.name === event);
@@ -129,7 +124,7 @@ const Event = props => {
               <span className='bold'>Rules : </span>
             </p>{' '}
             <br />
-            {(data.rules === undefined || data.rules === null) ? (
+            {data.rules === undefined || data.rules === null ? (
               <p>loading</p>
             ) : (
               data.rules.length > 0 &&
@@ -145,7 +140,7 @@ const Event = props => {
               <span className='bold'>Coordinators : </span>
             </p>{' '}
             <br />
-            {(data.coordinators === undefined || data.coordinators === null)? (
+            {data.coordinators === undefined || data.coordinators === null ? (
               <p>loading</p>
             ) : (
               data.coordinators.length > 0 &&

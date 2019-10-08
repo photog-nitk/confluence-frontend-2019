@@ -18,7 +18,7 @@ const Contact = () => {
     };
     getEvents();
   }, []);
-  console.log(data);
+
   return (
     <div>
       <Nav />

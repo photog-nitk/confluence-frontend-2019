@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import Store from '../../store/store';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom';
 // import Nav from '../utils/Nav';
 import config from '../../config.json';
 // import { readSync } from 'fs';
@@ -13,7 +14,6 @@ const Onboard = props => {
     contactNumber: '',
     year: ''
   });
-  console.log(props);
   const handleChange = e => {
     setData({
       ...data,
@@ -35,11 +35,11 @@ const Onboard = props => {
         body,
         iconfig
       );
-      console.log(res);
+
       if (res.data.success) {
         dispatch({
           type: 'ONBOARD',
-          payload: true
+          payload: res.data.data
         });
       }
     } catch (error) {
@@ -50,9 +50,9 @@ const Onboard = props => {
   const onSubmit = e => {
     e.preventDefault();
     onboard();
-    props.history.push('/');
-    console.log(data);
   };
+  if (!state.isAuth) return <Redirect to='/' />;
+  if (state.user && state.user.onBoard) return <Redirect to='/' />;
   return (
     <>
       <div className='o-container'>

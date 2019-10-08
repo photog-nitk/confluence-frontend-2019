@@ -22,8 +22,6 @@ const Events = props => {
     getEvents();
   }, []);
 
-  console.log(data);
-
   // const Events = data && data.find(e => e.name === category);
 
   return (

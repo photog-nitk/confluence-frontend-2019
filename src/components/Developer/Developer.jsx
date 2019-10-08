@@ -18,7 +18,7 @@ const Developer = () => {
     };
     getEvents();
   }, []);
-  console.log(data);
+
   return (
     <div>
       <Nav />

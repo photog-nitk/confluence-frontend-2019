@@ -3,130 +3,107 @@ import Nav from '../utils/Nav';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import config from '../../config.json';
-import sponsorHeading from "./SponsorsFont.svg";
+import sponsorHeading from './SponsorsFont.svg';
 import './sponsors.css';
-import title from "./bulb.jpg";
-import online from "./online.jpg";
-
+import title from './bulb.jpg';
+import online from './online.jpg';
 
 const Sponsors = () => {
-  const sponsiList = 
-  [
+  const sponsiList = [
     {
-      "Type": "Title Sponsor",
-      "List": 
-      [
+      Type: 'Title Sponsor',
+      List: [
         {
-          "Name": "Hero ",
-      "ImageURL": "https://i.ibb.co/LQcytnP/hero.png",
+          Name: 'Hero ',
+          ImageURL: 'https://i.ibb.co/LQcytnP/hero.png'
         }
-      ],
-      
-    }, 
-    {
-      "Type": "Powered By",
-      "List": 
-      [
-        {
-          "Name": "MTV Beats",
-          "ImageURL": "https://i.ibb.co/0KDWwwK/mtv-beats.png",
-        },
-      ],
+      ]
     },
     {
-      "Type": "Charged By",
-      "List": 
-      [
+      Type: 'Powered By',
+      List: [
         {
-          "Name": "APCPL",
-          "ImageURL": "https://i.ibb.co/K02FmYV/apcpl.png"
-
-        },
-      ],
+          Name: 'MTV Beats',
+          ImageURL: 'https://i.ibb.co/0KDWwwK/mtv-beats.png'
+        }
+      ]
     },
     {
-      "Type": "Online Food Partner",
-      "List": 
-      [
+      Type: 'Charged By',
+      List: [
         {
-          "Name": "Swiggy",
-          "ImageURL": "https://i.ibb.co/R9fh8tX/swiggy.png"
-
-        },
-      ],
+          Name: 'APCPL',
+          ImageURL: 'https://i.ibb.co/K02FmYV/apcpl.png'
+        }
+      ]
     },
     {
-      "Type": "Education Partner",
-      "List": 
-      [
+      Type: 'Online Food Partner',
+      List: [
         {
-          "Name": "GATE Forum",
-          "ImageURL": "https://i.ibb.co/wwF17xn/download.jpg"
-
-        },
-        {
-          "Name": "Made Easy",
-          "ImageURL": "https://i.ibb.co/crQNcDf/0.png"
-
-        },
-        {
-          "Name": "GATE Academy",
-          "ImageURL": "https://i.ibb.co/dQP8Vq3/gateacademy.jpg"
-
-        },
-      ],
+          Name: 'Swiggy',
+          ImageURL: 'https://i.ibb.co/R9fh8tX/swiggy.png'
+        }
+      ]
     },
     {
-      "Type": "Automobile Partner",
-      "List": 
-      [
+      Type: 'Education Partner',
+      List: [
         {
-          "Name": "Honda Cars",
-          "ImageURL": "https://i.ibb.co/HLZqgPQ/honda.png"
-
+          Name: 'GATE Forum',
+          ImageURL: 'https://i.ibb.co/wwF17xn/download.jpg'
         },
-      ],
+        {
+          Name: 'Made Easy',
+          ImageURL: 'https://i.ibb.co/crQNcDf/0.png'
+        },
+        {
+          Name: 'GATE Academy',
+          ImageURL: 'https://i.ibb.co/dQP8Vq3/gateacademy.jpg'
+        }
+      ]
     },
     {
-      "Type": "Gifting Partner",
-      "List": 
-      [
+      Type: 'Automobile Partner',
+      List: [
         {
-          "Name": "The Souled Store",
-          "ImageURL": "https://i.ibb.co/6nFH5jp/tss.jpg"
-
-        },
-      ],
+          Name: 'Honda Cars',
+          ImageURL: 'https://i.ibb.co/HLZqgPQ/honda.png'
+        }
+      ]
     },
     {
-      "Type": "Knowledge Partner",
-      "List": 
-      [
+      Type: 'Gifting Partner',
+      List: [
         {
-          "Name": "Wiley",
-          "ImageURL": "https://i.ibb.co/WGJ4317/wiley.png"
-
-        },
-      ],
+          Name: 'The Souled Store',
+          ImageURL: 'https://i.ibb.co/6nFH5jp/tss.jpg'
+        }
+      ]
     },
     {
-      "Type": "Saving Partner",
-      "List": 
-      [
+      Type: 'Knowledge Partner',
+      List: [
         {
-          "Name": "Grab On",
-          "ImageURL": "https://i.ibb.co/mNspTgL/grabon.jpg"
-
-        },
-      ],
+          Name: 'Wiley',
+          ImageURL: 'https://i.ibb.co/WGJ4317/wiley.png'
+        }
+      ]
     },
+    {
+      Type: 'Saving Partner',
+      List: [
+        {
+          Name: 'Grab On',
+          ImageURL: 'https://i.ibb.co/mNspTgL/grabon.jpg'
+        }
+      ]
+    }
+  ];
 
-  ]
-
-  console.log(sponsiList);
   return (
     <>
-    {/* <div className="sponsor-container">
+      {/* <div className="sponsor-container">
       <Nav />
         <img className="sponsor-head" src={sponsorHeading} alt="sponsorHeading" />
       
@@ -149,35 +126,31 @@ const Sponsors = () => {
         </div> 
       </div> 
     </div>  */}
-    
-    <div className="sponsor-container">
-      <Nav />
-        <img className="sponsor-head" src={sponsorHeading} alt="sponsorHeading" />
-      
-      <div className="sponsors-cont">
-        {
-          sponsiList.map((s, i) => 
-            (
-              <>
-                <h1>{s.Type}</h1>
-                <div className="sponsi-multi">
-                  {
-                    s.List.map((m, j) => (
-                      <div className="sponsi-single">
-                        <img src={m.ImageURL} alt={m.Name}></img>
-                        <h2>{m.Name}</h2>
-                      </div>
-                    ))
-                  }
-                </div>
-              </>
-            )
-          )
-        }
+
+      <div className='sponsor-container'>
+        <Nav />
+        <img
+          className='sponsor-head'
+          src={sponsorHeading}
+          alt='sponsorHeading'
+        />
+
+        <div className='sponsors-cont'>
+          {sponsiList.map((s, i) => (
+            <>
+              <h1>{s.Type}</h1>
+              <div className='sponsi-multi'>
+                {s.List.map((m, j) => (
+                  <div className='sponsi-single'>
+                    <img src={m.ImageURL} alt={m.Name}></img>
+                    <h2>{m.Name}</h2>
+                  </div>
+                ))}
+              </div>
+            </>
+          ))}
+        </div>
       </div>
-
-    </div>
-
     </>
   );
 };

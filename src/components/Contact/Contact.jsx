@@ -24,7 +24,7 @@ const Contact = () => {
       <Nav />
       <div className='con-contain'>
         <div className='con-heading'>
-          <img className='con-title' src={TeamConflu} />
+          <img className='con-title' src={TeamConflu} alt='Team Confluence' />
         </div>
         <div className='con-cards'>
           {/* card starts here */}

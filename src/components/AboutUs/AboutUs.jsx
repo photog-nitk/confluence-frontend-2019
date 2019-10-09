@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutUsText from './AboutusText.png';
-import frontScreen from './frontScreen.png';
+// import aboutUsText from './AboutusText.png';
+// import frontScreen from './frontScreen.png';
 import Console from './AboutusConsiletext-min.png';
 import backGlow from './pinkglow.png';
 import './AboutUs.css';

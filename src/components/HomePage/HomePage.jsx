@@ -4,10 +4,10 @@ import ConfluText from './smalldisk-min.png';
 import Theme from './homepagetheme-min.png';
 import Nav from '../utils/Nav';
 import Store from '../../store/store';
-import Categories from '../Events/Categories';
+// import Categories from '../Events/Categories';
 import './HomePage.css';
 import { Redirect } from 'react-router-dom';
-import AboutUs from '../AboutUs/AboutUs';
+// import AboutUs from '../AboutUs/AboutUs';
 
 const HomePage = () => {
   // const { state, dispatch } = useContext(Store);

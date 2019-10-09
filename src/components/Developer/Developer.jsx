@@ -19,6 +19,17 @@ const Developer = () => {
     getEvents();
   }, []);
 
+
+  if(data[0]) {
+
+    data[0].members.sort((a, b) => {
+
+      if(parseInt(a.year) > parseInt(b.year))
+        return true;
+      return false;
+    })
+  }
+
   return (
     <div>
       <Nav />
@@ -43,7 +54,7 @@ const Developer = () => {
                     </a>
                   </div>
                   <div className='dev-photo'>
-                    <img className='dev-image' src={e.profilePic} />
+                    <img className='dev-image' src={e.profilePic} alt={e.name} />
                   </div>
                 </div>
               </div>

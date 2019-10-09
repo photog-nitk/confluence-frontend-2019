@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "confluence-frontend-2019"
+    "default": "confluence-frontend-2019",
+    "stats": "confluence19"
   }
 }

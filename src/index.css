@@ -9,6 +9,7 @@ html {
     width: 100%;
     min-height: 100vh;
     background-size: 100%;
+    height: auto;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom right, #920563, #3d1369);
 }
@@ -175,7 +176,9 @@ a {
 .m-container {
     background-image: linear-gradient(to bottom right, #920563, #3d1369);
     width: 100%;
-    height: auto;
+    background-attachment: fixed;
+
+    
     min-height: 100vh;
 }
 
